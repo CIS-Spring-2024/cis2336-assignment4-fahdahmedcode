@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | UH-Sugarland Cafeteria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+        <nav>
+            <ul>
+                <li><a href="mainpage.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Your Order Total: $<span id="total">0.00</span></h2>
+        <form id="checkout-form">
+            <label for="pickup-delivery">Pickup or Delivery:</label>
+            <select id="pickup-delivery" name="pickup-delivery">
+                <option value="pickup">Pick Up</option>
+                <option value="delivery">Delivery</option>
+            </select>
+            <div id="delivery-address" style="display: none;">
+                <label for="address">Delivery Address:</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address">
+            </div>
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+
+    <script src="checkout.js"></script>
+</body>
+</html>
