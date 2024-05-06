@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;}
+
+
+.container {
+    max-width: 900px; 
+    margin: 0 auto; 
+    padding: 10px; 
+}
+
+
+header {
+    background-color: red; 
+    color: white; 
+    padding: 10px 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logo img {
+    max-width: 60px; 
+}
+
+nav {
+    text-align: right; 
+}
+
+nav ul {
+    list-style: none; 
+    display: flex; 
+    align-items: center; 
+}
+
+nav ul li {
+    margin-right: 10px; 
+}
+
+nav ul li a {
+    color: white; 
+    text-decoration: none; 
+    padding: 8px; 
+}
+
+nav ul li a:hover {
+    background-color: #555; 
+}
+
+
+main {
+    padding: 20px; 
+}
+
+
+footer {
+    background-color: red; 
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+    width: 100%; 
+    font-size: 14px; 
+}
+
+
+#welcome-message {
+    text-align: center; 
+}
+
+#welcome-message .container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+}
+
+.welcome-text {
+    text-align: center; 
+}
+
+#welcome-message img {
+    max-width: 60%; 
+    height: auto; 
+    border-radius: 10px; 
+    margin-top: 10px; 
+}
+
+
+#featured-item {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+}
+
+#featured-item img {
+    width: 180px; 
+    height: 180px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    margin-right: 10px; 
+}
+
+.featured-text {
+    text-align: center; 
+    padding: 10px; 
+}
+
+.featured-text h3 {
+    margin-bottom: 10px; 
+}
+
+.featured-text p {
+    margin-bottom: 10px; 
+}
+
+.featured-text .btn {
+    background-color: red; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+}
+
+.featured-text .btn:hover {
+    background-color: #555; 
+}
+
+
+#contact-info {
+    text-align: center; 
+    padding: 10px; 
+}
+
+
+@media (max-width: 768px) {
+    #welcome-message .container,
+    #featured-item,
+    #Ownerbio .container,
+    #contact-info {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .featured-text {
+        text-align: center; 
+    }
+}
